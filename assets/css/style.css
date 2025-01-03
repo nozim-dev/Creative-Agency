@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --fontQuickSand: "Quicksand", serif;
+  --fontNunito: "Nunito", serif;
+  --black-80: #1d1d1d;
+  --black-50: #464646;
+  --blue-80: #377dff;
+  --white: #fff;
+  --gray-40: #e2e2e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
