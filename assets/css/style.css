@@ -593,3 +593,115 @@ main {
 .section_ourServices_category_item:hover {
   box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 10%);
 }
+.section_ourPortfolio {
+  width: 100%;
+  margin-bottom: 196px;
+  position: relative;
+}
+.section_ourPortfolio > h5 {
+  font-family: var(--fontQuickSand);
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  font-weight: 600;
+  color: var(--blue-80);
+  text-align: center;
+}
+.section_ourPortfolio > h1 {
+  font-family: var(--fontNunito);
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 0.3%;
+  color: var(--black-80);
+  margin-top: 20px;
+  text-align: center;
+}
+.section_ourPortfolio > p {
+  font-family: var(--fontQuickSand);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 1%;
+  color: var(--black-50);
+  text-align: center;
+  max-width: 674px;
+  margin: auto;
+  margin-top: 28px;
+}
+.section_ourPortfolio_imageBox {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.section_ourPortfolio_imageBox_item {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  position: relative;
+}
+.section_ourPortfolio_imageBox_item:nth-of-type(2) {
+  min-width: 400px !important;
+  height: 400px;
+}
+.section_ourPortfolio_imageBox_item_img {
+  width: 100%;
+  height: 100%;
+}
+.section_ourPortfolio_imageBox_item_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.section_ourPortfolio_imageBox_item > h3 {
+  position: absolute;
+  bottom: 30px;
+  left: 24px;
+  font-family: var(--fontQuickSand);
+  font-size: 24px;
+  letter-spacing: 0.3%;
+  font-weight: 700;
+  color: var(--white);
+}
+.section_ourPortfolio > button {
+  display: block;
+  width: 100%;
+  max-width: 226px;
+  padding: 12px 0;
+  border-radius: 24px;
+  border: 1px solid var(--blue-80);
+  font-family: var(--fontQuickSand);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  font-weight: 700;
+  color: var(--blue-80);
+  background-color: var(--white);
+  margin: auto;
+  margin-top: 46px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.section_ourPortfolio > button:hover {
+  box-shadow: 0 4px 8px 0 rgba(55, 125, 255, 0.5);
+}
+.section_ourPortfolio_dots {
+  position: absolute;
+  top: 139px;
+  right: -8px;
+  width: 100%;
+  max-width: 98.48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13.63px;
+  z-index: -1;
+  transform: rotate(-16.32deg);
+}
+.section_ourPortfolio_dots_dot {
+  width: 5px;
+  height: 5.25px;
+  background-color: #eb00ff;
+  border-radius: 50%;
+}
