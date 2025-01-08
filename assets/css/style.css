@@ -19,6 +19,7 @@
   max-width: 1440px;
   margin: auto;
   padding-top: 72px;
+  border: 2px solid red;
 }
 header {
   width: 100%;
@@ -1036,4 +1037,47 @@ footer {
   color: var(--white);
   text-align: center;
   opacity: 70%;
+}
+.menu_bar {
+  display: none;
+}
+.menu_bar_content {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  header {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav {
+    max-width: 300px;
+  }
+  header > button {
+    padding: 8px 0;
+    max-width: 130px;
+  }
+  .header_logo {
+    max-width: 120px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav {
+    max-width: 268px;
+  }
+  .container {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 585px) {
+  nav {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  .menu_bar {
+    display: block;
+  }
 }
