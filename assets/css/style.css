@@ -1077,6 +1077,14 @@ footer {
   .section_collaboration {
     padding: 0 15px;
   }
+  footer {
+    padding: 132px 15px 33px 15px;
+  }
+  .footer_menu {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 998px) {
   .section_aboutUs_main_text {
@@ -1499,5 +1507,33 @@ footer {
     padding: 10px 0;
     font-size: 12px;
     line-height: 18px;
+  }
+  .section_collaboration {
+    margin-bottom: 100px;
+  }
+  footer {
+    padding: 45px 15px 60px 15px;
+  }
+  .footer_bottom_socials {
+    max-width: 280px;
+    gap: 20px;
+  }
+  .footer_bottom_socials_item {
+    min-width: 36px;
+    min-height: 36px;
+  }
+  .footer_bottom > p {
+    font-size: 14px;
+  }
+  .footer_menu_item > h5 {
+    font-size: 18px;
+  }
+  .footer_menu_item > a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    min-width: 320px;
   }
 }
