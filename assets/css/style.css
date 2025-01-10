@@ -362,6 +362,7 @@ main {
 .section_aboutUs_main_image > img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 24px;
 }
 .section_aboutUs_main_text {
@@ -1051,6 +1052,33 @@ footer {
   .section_hero {
     padding: 0 15px;
   }
+  .section_aboutUs {
+    padding: 0 15px;
+  }
+  .section_aboutUs_main {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .section_aboutUs_main_text {
+    padding: 0;
+  }
+  .section_aboutUs_main_text > p {
+    font-size: 18px;
+  }
+  .section_aboutUs_main_image {
+    height: 298px;
+  }
+}
+@media screen and (max-width: 922px) {
+  .section_aboutUs_main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .section_aboutUs_main_text_btn {
+    margin: auto;
+    margin-top: 24px;
+  }
 }
 @media screen and (max-width: 800px) {
   nav {
@@ -1077,7 +1105,7 @@ footer {
   nav {
     display: none;
   }
-  button {
+  header > button {
     display: none;
   }
   .menu_bar {
@@ -1167,5 +1195,55 @@ footer {
   .circle4 {
     width: 16px;
     height: 16px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .section_hero {
+    margin-bottom: 100px;
+  }
+  .section_aboutUs > h5 {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+  .section_aboutUs > h1 {
+    font-size: 24px;
+    line-height: 32.74px;
+    margin-top: 10px;
+  }
+  .section_aboutUs_main {
+    margin-top: 35px;
+  }
+  .section_aboutUs_main_text > p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .section_aboutUs_main_text_btn {
+    margin-top: 35px;
+    gap: 35px;
+  }
+  .section_aboutUs_main_text_btn > button:first-of-type {
+    max-width: 124px;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .section_aboutUs_main_text_btn > button:last-of-type {
+    max-width: 150px;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .section_aboutUs_main_image {
+    margin-top: 50px;
+    max-width: 340px;
+    height: 242px;
+  }
+  .section_aboutUs_main_image_item1{
+    left: 6px;
+    top: -10px;
+  }
+  .section_aboutUs_main_image_item2{
+    right: 6px;
+    bottom: -10px;
   }
 }
