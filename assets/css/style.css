@@ -543,14 +543,13 @@ main {
 .section_ourServices_category {
   width: 100%;
   max-width: 565px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 41px;
   row-gap: 38px;
 }
 .section_ourServices_category_item {
   width: 100%;
-  max-width: 262px;
   border: 1px solid rgba(0, 0, 0, 10%);
   border-radius: 30px;
   padding: 35px 47px;
@@ -1058,6 +1057,9 @@ footer {
   .section_aboutUs_main {
     gap: 25px;
   }
+  .section_ourServices {
+    padding: 0 15px;
+  }
 }
 @media screen and (max-width: 998px) {
   .section_aboutUs_main_text {
@@ -1079,6 +1081,16 @@ footer {
     margin: auto;
     margin-top: 24px;
   }
+  .section_ourServices_category {
+    gap: 20px;
+  }
+  .section_ourServices_category_item {
+    padding: 22px;
+  }
+  .section_ourServices_category_item_icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 @media screen and (max-width: 800px) {
   nav {
@@ -1091,6 +1103,18 @@ footer {
   .header_logo {
     max-width: 120px;
     height: 45px;
+  }
+  .section_ourServices_text > h1 {
+    font-size: 45px;
+  }
+  .section_ourServices_category_item > h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .section_ourServices {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 620px) {
@@ -1238,12 +1262,57 @@ footer {
     max-width: 340px;
     height: 242px;
   }
-  .section_aboutUs_main_image_item1{
+  .section_aboutUs_main_image_item1 {
     left: 6px;
     top: -10px;
   }
-  .section_aboutUs_main_image_item2{
+  .section_aboutUs_main_image_item2 {
     right: 6px;
     bottom: -10px;
+  }
+  .section_aboutUs {
+    margin-bottom: 99px;
+  }
+  .section_ourServices_text > h5 {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+  .section_ourServices_text > h1 {
+    font-size: 24px;
+    line-height: 32.74px;
+    margin-top: 10px;
+  }
+  .section_ourServices_text > p {
+    margin-top: 34px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .section_ourServices_text > a {
+    margin-top: 6px;
+    justify-self: flex-start;
+    font-size: 14px;
+    line-height: 17.5px;
+    gap: 10px;
+  }
+  .section_ourServices_text > a > span {
+    width: 20px;
+  }
+  .section_ourServices_category {
+    margin-top: 23px;
+    grid-template-columns: 1fr;
+  }
+  .section_ourServices_category_item {
+    padding: 35px;
+  }
+  .section_ourServices_category_item_icon {
+    width: 100px;
+    height: 100px;
+  }
+  .section_ourServices_category_item > h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    margin-top: 27px;
+    max-width: 112px;
   }
 }
