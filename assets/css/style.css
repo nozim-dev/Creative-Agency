@@ -643,7 +643,7 @@ main {
   position: relative;
 }
 .section_ourPortfolio_imageBox_item:nth-of-type(2) {
-  min-width: 400px !important;
+  min-width: 400px;
   height: 400px;
 }
 .section_ourPortfolio_imageBox_item_img {
@@ -1060,6 +1060,9 @@ footer {
   .section_ourServices {
     padding: 0 15px;
   }
+  .section_ourPortfolio {
+    padding: 0 15px;
+  }
 }
 @media screen and (max-width: 998px) {
   .section_aboutUs_main_text {
@@ -1070,6 +1073,16 @@ footer {
   }
   .section_aboutUs_main_image {
     height: 298px;
+  }
+  .section_ourPortfolio_imageBox_item {
+    max-width: 280px;
+  }
+  .section_ourPortfolio_imageBox_item:nth-of-type(2) {
+    min-width: auto;
+    max-width: 300px;
+  }
+  .section_ourPortfolio_imageBox {
+    gap: 12px;
   }
 }
 @media screen and (max-width: 922px) {
@@ -1110,6 +1123,23 @@ footer {
   .section_ourServices_category_item > h3 {
     font-size: 20px;
     line-height: 30px;
+  }
+  .section_ourPortfolio_imageBox {
+    flex-direction: column;
+  }
+  .section_ourPortfolio_imageBox_item {
+    width: 100%;
+    max-width: 600px;
+  }
+  .section_ourPortfolio_imageBox_item:nth-of-type(2) {
+    max-width: 600px;
+  }
+  .section_ourPortfolio_dots {
+    right: 20px;
+    top: 60px;
+  }
+  .section_ourPortfolio_imageBox_item > h3 {
+    font-size: 34px;
   }
 }
 @media screen and (max-width: 728px) {
@@ -1314,5 +1344,46 @@ footer {
     margin: auto;
     margin-top: 27px;
     max-width: 112px;
+  }
+  .section_ourServices {
+    margin-bottom: 75px;
+  }
+  .section_ourPortfolio > h5 {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+  .section_ourPortfolio > h1 {
+    font-size: 24px;
+    line-height: 32.74px;
+    margin-top: 10px;
+  }
+  .section_ourPortfolio > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 34px;
+  }
+  .section_ourPortfolio_imageBox {
+    padding: 0 20px;
+    margin-top: 34px;
+  }
+  .section_ourPortfolio_imageBox_item {
+    max-width: 300px;
+    height: 300px;
+  }
+  .section_ourPortfolio_imageBox_item:nth-of-type(2) {
+    max-width: 300px;
+    height: 300px;
+  }
+  .section_ourPortfolio_imageBox_item > h3 {
+    font-size: 24px;
+    line-height: 24px;
+    bottom: 24px;
+  }
+  .section_ourPortfolio_imageBox_item_img > img {
+    border-radius: 24px;
+  }
+  .section_ourPortfolio > button {
+    margin-top: 48px;
+    padding: 10px 0;
   }
 }
